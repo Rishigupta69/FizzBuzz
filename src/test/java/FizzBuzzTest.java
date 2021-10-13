@@ -23,4 +23,11 @@ public class FizzBuzzTest {
 
         Assert.assertEquals("Buzz", fizzBuzz.convert(5));
     }
+
+    @Test
+    public void multiplesOfBothThreeAndFive(){
+
+        Assert.assertEquals("FizzBuzz", fizzBuzz.convert(15));
+    }
+
 }
