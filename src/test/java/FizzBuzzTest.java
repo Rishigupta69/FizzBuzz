@@ -1,9 +1,14 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 public class FizzBuzzTest {
 
+    FizzBuzz fizzBuzz = new FizzBuzz();
+
     @Test
-    public void fizzBuzzClassTest(){
-        FizzBuzz fizzBuzz = new FizzBuzz();
+    public void fizzBuzzConvertorOnlyNumbers(){
+
+        Assert.assertEquals("1", fizzBuzz.convert(1));
+        Assert.assertEquals("2", fizzBuzz.convert(2));
     }
 }
