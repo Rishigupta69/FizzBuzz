@@ -13,4 +13,11 @@ public class FizzBuzz {
         }
         return String.valueOf(input);
     }
+
+    public String convertWithJava8(int input){
+        String result = Optional.of(input)
+                .map(n -> (n % 3 == 0 ? "Fizz" : "") + (n % 5 == 0 ? "Buzz" : ""))
+                .get();
+        return result.isEmpty()? String.valueOf(input): result;
+    }
 }
